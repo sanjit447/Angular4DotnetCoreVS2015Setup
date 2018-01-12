@@ -1,0 +1,28 @@
+﻿<div>
+    <h2>Welcome {{currentUser.firstName}}!</h2>   
+    <table class="table">
+        <thead>
+            <tr>
+                <th >All registered users:</th>
+                <th></th><th></th>
+                <th><a  [routerLink]="['/login']">Logout</a></th>
+            </tr>
+            <tr class="info">
+                <th>Username</th>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of users" class="success">
+                <td>{{user.username}} </td>
+                <td>{{user.firstName}}</td>
+                <td>{{user.lastName}}</td>
+                <td><a (click)="deleteUser(user.id)">Delete</a></td>
+            </tr>
+        </tbody>
+    </table>
+   
+</div>
+
