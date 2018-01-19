@@ -1,7 +1,5 @@
 ﻿/// <autosync enabled="true" />
 /// <reference path="../gulpfile.js" />
-/// <reference path="../karma.conf.js" />
-/// <reference path="../karma-test-shim.js" />
 /// <reference path="../protractor.config.js" />
 /// <reference path="app/_directives/alert.component.js" />
 /// <reference path="app/_directives/index.js" />
